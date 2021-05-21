@@ -1,0 +1,192 @@
+
+/****************************/
+/*        Document         */
+/***************************/
+
+html {
+    font-size: 1em;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/****************************/
+/*        Header         */
+/***************************/
+
+header {
+    background-color: #EAEAD7;
+}
+
+img{
+    width: 100%;
+}
+
+.header-icon-one {
+    position: absolute;
+    z-index: 10em;
+    right: 1.5em;
+    top: 0;
+}
+
+.header-icon-two {
+    position: absolute;
+    z-index: 10em;
+    right: 0;
+    top: 0;
+}
+
+/****************************/
+/*        Body             */
+/***************************/
+
+/*     Layout    */
+.wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    flex: 1 1 100%;
+}
+
+h2 {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 2em; /* 32px */
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.5em; 
+}
+
+p {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1.125em; /* 18px */
+}
+
+/* About Me */
+
+.aboutMe {
+    background-color: #EAEAD7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 15em;
+}
+
+.aboutMe > * {
+    flex: 1 1 100%;
+    margin: 0.5em 0; /* 8px top and bottom */
+}
+
+.aboutMe p {
+   max-width: 40em; /* 640px */
+}
+
+/* Skills */
+
+.skills {
+    padding-top: 1em;
+    background-color: #9AD8FE;
+    height: 15em;
+}
+.skills ul {
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.icon {
+    font-size: 100px;
+}
+
+/* Projects */
+
+.projects {
+    padding-top: 1em;
+    background-color: #EAEAD7;
+    display: flex;
+    flex-wrap: wrap;
+    height: 25em;
+}
+
+.projects h2 {
+    flex: 1 1 100%;
+}
+
+.container h4 p {
+    margin-top: 0.25em;
+}
+
+.card * {
+    text-align: center;
+}
+
+.card {
+    flex: 1 1 50%;
+}
+
+.card img{
+    max-width: 20%;
+}
+
+.container_2 {
+    padding-top: 1em;
+}
+
+/****************************/
+/*        Footer             */
+/***************************/
+.footer {
+    background-color: #0D0D30;
+    color: white;
+    text-align: center;
+}
+
+.footer p  {
+    margin-top: 0.5em;
+}
+.fa {
+    padding: 1em;
+    font-size: 2em;
+    width: 3em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+/* Media queries */
+  @media screen and (max-width:39.3125em) {
+    p {
+        font-size: 1em;
+    }
+    .header-icon-one {
+        right: 2em;
+        top: 0px;
+    }
+    .header-icon-two {
+        right: 0em;
+        top: 0px;
+    }
+    .skills {
+        height: 10em;
+    }
+    .icon {
+        font-size: 3.75em;
+    }
+    .projects {
+        height: 50em;
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+    
+    .card img{
+        max-width: 20%;
+    }  
+}
